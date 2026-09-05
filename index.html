@@ -80,7 +80,7 @@
 
         /* Hero Section */
         .hero {
-            min-height: 90vh;
+            min-height: 85vh;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -98,20 +98,23 @@
         }
 
         .hero-content h3 {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             color: var(--text-muted);
             margin-bottom: 20px;
+            font-weight: 500;
         }
 
         .hero-content p {
             color: var(--text-muted);
-            max-width: 600px;
+            max-width: 650px;
             margin-bottom: 30px;
+            font-size: 1rem;
         }
 
         .cta-btns {
             display: flex;
             gap: 15px;
+            flex-wrap: wrap;
         }
 
         .btn {
@@ -189,6 +192,7 @@
             display: flex;
             align-items: center;
             gap: 10px;
+            font-size: 1.1rem;
         }
 
         .skill-tags {
@@ -206,58 +210,10 @@
             border: 1px solid rgba(56, 189, 248, 0.2);
         }
 
-        /* Experience Timeline */
-        .timeline {
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-        }
-
-        .timeline-item {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-left: 4px solid var(--primary);
-            padding: 25px;
-            border-radius: 8px;
-        }
-
-        .timeline-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 15px;
-            flex-wrap: wrap;
-        }
-
-        .timeline-title {
-            font-size: 1.2rem;
-            font-weight: 600;
-        }
-
-        .timeline-company {
-            color: var(--primary);
-            font-size: 0.95rem;
-        }
-
-        .timeline-date {
-            color: var(--text-muted);
-            font-size: 0.85rem;
-        }
-
-        .timeline-body ul {
-            padding-left: 20px;
-            color: var(--text-muted);
-            font-size: 0.95rem;
-        }
-
-        .timeline-body li {
-            margin-bottom: 8px;
-        }
-
         /* Projects Grid */
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 25px;
         }
 
@@ -277,9 +233,15 @@
             border-color: var(--primary);
         }
 
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+
         .project-card h3 {
-            font-size: 1.3rem;
-            margin-bottom: 10px;
+            font-size: 1.25rem;
         }
 
         .project-card p {
@@ -291,12 +253,17 @@
         .project-links {
             display: flex;
             gap: 15px;
+            align-items: center;
         }
 
         .project-links a {
             color: var(--text-main);
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             transition: 0.3s;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
         }
 
         .project-links a:hover {
@@ -316,8 +283,8 @@
             display: flex;
             justify-content: center;
             gap: 25px;
-            margin-top: 20px;
-            font-size: 1.5rem;
+            margin-top: 25px;
+            font-size: 1.6rem;
         }
 
         .social-links a {
@@ -349,8 +316,7 @@
         <div class="logo">&lt;Ebrahim /&gt;</div>
         <ul>
             <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="#tech-stack">Tech Stack</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -359,121 +325,87 @@
     <!-- Hero Section -->
     <section class="hero" id="about">
         <div class="hero-content">
-            <h1>Hi, I'm <span>Ebrahim Mohamed</span></h1>
-            <h3>Senior Flutter Developer</h3>
-            <p>Innovative Mobile Application Developer with 4 years of experience building enterprise-scale solutions for Android & iOS platforms, specializing in Flutter, SAP ERP integration, Clean Architecture, and performance optimization[cite: 1].</p>
+            <h1>Hi, I'm <span>Ebrahim Mohamed</span> 👋</h1>
+            <h3>Senior Flutter Developer | Building high-performance cross-platform apps | SAP & Firebase Integration Expert</h3>
+            <p>I am a passionate Senior Flutter Developer with over 4+ years of experience building scalable, high-performance mobile applications for both iOS and Android[cite: 1]. My expertise lies in developing ERP systems integrated with SAP, using Firebase, implementing Clean Architecture, and delivering top-notch user experiences[cite: 1].</p>
             <div class="cta-btns">
                 <a href="#contact" class="btn btn-primary"><i class="fas fa-envelope"></i> Get In Touch</a>
                 <a href="#projects" class="btn btn-outline"><i class="fas fa-code"></i> View Projects</a>
+                <a href="https://github.com/Ebrahim132024" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/ebrahim-mohamed-a634841a3" target="_blank" class="btn btn-outline"><i class="fab fa-linkedin"></i> LinkedIn</a>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2 class="section-title">Technical Expertise</h2>
+    <!-- Tech Stack Section -->
+    <section id="tech-stack">
+        <h2 class="section-title">Tech Stack</h2>
         <div class="skills-grid">
             <div class="skill-card">
                 <h3><i class="fas fa-mobile-alt"></i> Mobile Development</h3>
                 <div class="skill-tags">
                     <span class="tag">Flutter</span>
-                    <span class="tag">Dart</span>
-                    <span class="tag">Kotlin</span>
                     <span class="tag">Android</span>
-                    <span class="tag">iOS</span>
-                </div>
-            </div>
-            <div class="skill-card">
-                <h3><i class="fas fa-layer-group"></i> Architecture & State</h3>
-                <div class="skill-tags">
-                    <span class="tag">Clean Architecture</span>
-                    <span class="tag">Bloc / Cubit</span>
+                    <span class="tag">GetX</span>
+                    <span class="tag">Bloc</span>
                     <span class="tag">Provider</span>
-                    <span class="tag">MVVM / MVC</span>
-                    <span class="tag">SOLID</span>
+                    <span class="tag">MVVM</span>
+                    <span class="tag">Clean Architecture</span>
                 </div>
             </div>
             <div class="skill-card">
-                <h3><i class="fas fa-network-wired"></i> APIs & Integration</h3>
+                <h3><i class="fas fa-server"></i> Backend & APIs</h3>
                 <div class="skill-tags">
-                    <span class="tag">RESTful APIs</span>
-                    <span class="tag">SAP ERP</span>
                     <span class="tag">Firebase</span>
-                    <span class="tag">Dio / Retrofit</span>
-                    <span class="tag">Postman</span>
+                    <span class="tag">RESTful APIs</span>
+                    <span class="tag">Dio</span>
+                    <span class="tag">Http</span>
+                    <span class="tag">SAP ERP</span>
+                    <span class="tag">Socket.io</span>
                 </div>
             </div>
             <div class="skill-card">
-                <h3><i class="fas fa-database"></i> Databases & CI/CD</h3>
+                <h3><i class="fas fa-database"></i> Databases</h3>
                 <div class="skill-tags">
                     <span class="tag">SQLite</span>
                     <span class="tag">Hive</span>
+                    <span class="tag">Room</span>
+                    <span class="tag">SharedPreferences</span>
                     <span class="tag">Firestore</span>
-                    <span class="tag">Play Store</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3><i class="fas fa-tools"></i> Tools & DevOps</h3>
+                <div class="skill-tags">
+                    <span class="tag">Git</span>
+                    <span class="tag">GitHub</span>
+                    <span class="tag">Jira</span>
+                    <span class="tag">Postman</span>
+                    <span class="tag">Android Studio</span>
+                    <span class="tag">Xcode</span>
+                    <span class="tag">CI/CD</span>
                     <span class="tag">TestFlight</span>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience">
-        <h2 class="section-title">Work Experience</h2>
-        <div class="timeline">
-            
-            <div class="timeline-item">
-                <div class="timeline-header">
-                    <div>
-                        <div class="timeline-title">Senior Flutter Developer</div>
-                        <div class="timeline-company">TransTec for Business Development Solutions - Cairo, Egypt</div>
-                    </div>
-                    <div class="timeline-date">Feb 2025 - Present</div>
-                </div>
-                <div class="timeline-body">
-                    <ul>
-                        <li>Led design and development of a Custom Portal integrated with SAP APIs, reducing manual data entry time by 40%[cite: 1].</li>
-                        <li>Implemented multi-language support and responsive UI, improving user satisfaction by 30%[cite: 1].</li>
-                        <li>Delivered real-time dashboards for Orders, Invoices, and Deliveries, speeding decision-making by 25%[cite: 1].</li>
-                        <li>Collaborated in Agile environment using Jira, enhancing sprint delivery rate by 20%[cite: 1].</li>
-                    </ul>
+            <div class="skill-card">
+                <h3><i class="fas fa-code"></i> Languages</h3>
+                <div class="skill-tags">
+                    <span class="tag">Dart</span>
+                    <span class="tag">Java</span>
+                    <span class="tag">Kotlin</span>
+                    <span class="tag">C++</span>
+                    <span class="tag">SQL</span>
                 </div>
             </div>
-
-            <div class="timeline-item">
-                <div class="timeline-header">
-                    <div>
-                        <div class="timeline-title">Mobile Application Developer (Android & Flutter)</div>
-                        <div class="timeline-company">HO Group - Cairo, Egypt</div>
-                    </div>
-                    <div class="timeline-date">Dec 2023 - Feb 2025</div>
-                </div>
-                <div class="timeline-body">
-                    <ul>
-                        <li>Developed cross-platform mobile solutions integrated with SAP ERP, saving 200+ man-hours per month[cite: 1].</li>
-                        <li>Applied Clean MVVM architecture, reducing app crash rates by 35%[cite: 1].</li>
-                        <li>Optimized performance to cut average load time by 40% across platforms[cite: 1].</li>
-                        <li>Delivered secure systems used by 1,500+ employees organization-wide[cite: 1].</li>
-                    </ul>
+            <div class="skill-card">
+                <h3><i class="fas fa-award"></i> Core Skills</h3>
+                <div class="skill-tags">
+                    <span class="tag">ERP & SAP Integration</span>
+                    <span class="tag">Agile (Scrum / Kanban)</span>
+                    <span class="tag">Mentorship</span>
+                    <span class="tag">Scalable Code</span>
                 </div>
             </div>
-
-            <div class="timeline-item">
-                <div class="timeline-header">
-                    <div>
-                        <div class="timeline-title">Flutter Developer</div>
-                        <div class="timeline-company">DLT Software - Cairo, Egypt</div>
-                    </div>
-                    <div class="timeline-date">Sep 2022 - Dec 2023</div>
-                </div>
-                <div class="timeline-body">
-                    <ul>
-                        <li>Delivered 12+ production-grade mobile apps with Firebase & REST APIs (50K+ combined downloads)[cite: 1].</li>
-                        <li>Mentored junior developers, boosting team delivery speed by 25% through code reviews[cite: 1].</li>
-                        <li>Improved app response time by 30% and optimized overall memory usage[cite: 1].</li>
-                    </ul>
-                </div>
-            </div>
-
         </div>
     </section>
 
@@ -484,42 +416,75 @@
             
             <div class="project-card">
                 <div>
-                    <h3>Umbrella App <span class="tag">100K+ Downloads</span></h3>
-                    <p>E-commerce Platform (B2C & B2B) built using Flutter, Firebase, and REST API integrations with analytics[cite: 1].</p>
+                    <div class="project-header">
+                        <h3>Umbrella App</h3>
+                        <span class="tag">100K+ Downloads</span>
+                    </div>
+                    <p>A B2C e-commerce platform featuring Firebase integration, deep linking, and real-time updates[cite: 1].</p>
                 </div>
                 <div class="project-links">
-                    <a href="#" target="_blank" title="Google Play"><i class="fab fa-google-play"></i></a>
-                    <a href="#" target="_blank" title="App Store"><i class="fab fa-apple"></i></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.dlttrade.umbrella" target="_blank"><i class="fab fa-google-play"></i> Google Play</a>
                 </div>
             </div>
 
             <div class="project-card">
                 <div>
-                    <h3>Custom Portal (SAP Integration)</h3>
-                    <p>Enterprise ERP mobile platform enabling seamless data synchronization and multilingual workflow automation[cite: 1].</p>
+                    <div class="project-header">
+                        <h3>KSI Forensics App</h3>
+                    </div>
+                    <p>Designed for Ontario insurance adjusters to assess property damage due to weather conditions using intuitive UI[cite: 1].</p>
                 </div>
                 <div class="project-links">
-                    <a href="#" target="_blank" title="Preview"><i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://play.google.com/store/apps/details?id=ksi.korany.forensics" target="_blank"><i class="fab fa-google-play"></i> Google Play</a>
                 </div>
             </div>
 
             <div class="project-card">
                 <div>
-                    <h3>KSI Forensics App</h3>
-                    <p>Field assessment tool for property damage adjusters featuring offline functionality and real-time reporting[cite: 1].</p>
+                    <div class="project-header">
+                        <h3>Pharma Today App</h3>
+                    </div>
+                    <p>A pharmaceutical sales and delivery management system integrated with SAP and Firebase[cite: 1].</p>
                 </div>
                 <div class="project-links">
-                    <a href="#" target="_blank" title="App Store"><i class="fab fa-apple"></i></a>
+                    <a href="https://drive.google.com/file/d/1stDUfbh8sAcg9OiCEesyk0mTs-Ptglex/view?usp=sharing" target="_blank"><i class="fab fa-google-drive"></i> Preview / Demo</a>
                 </div>
             </div>
 
             <div class="project-card">
                 <div>
-                    <h3>Ho Assets App</h3>
-                    <p>Enterprise Asset Management solution utilizing Bloc/Cubit, SQLite, and Firebase integration[cite: 1].</p>
+                    <div class="project-header">
+                        <h3>Ho Assets App</h3>
+                    </div>
+                    <p>Displays branches, departments, and assets with ownership and location details[cite: 1].</p>
                 </div>
                 <div class="project-links">
-                    <a href="#" target="_blank" title="Preview"><i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://drive.google.com/file/d/1sjbfFsDkZvCnwF1vx7Z_4nBgel6bJzXG/view?usp=sharing" target="_blank"><i class="fab fa-google-drive"></i> Preview / Demo</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div>
+                    <div class="project-header">
+                        <h3>HR Assist App</h3>
+                    </div>
+                    <p>Leave and attendance management system with biometric authentication and role-based permissions[cite: 1].</p>
+                </div>
+                <div class="project-links">
+                    <a href="https://drive.google.com/file/d/1slVObYOkl7-v7Kh94FVPyb-d2btDyYhH/view?usp=sharing" target="_blank"><i class="fab fa-google-drive"></i> Preview / Demo</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div>
+                    <div class="project-header">
+                        <h3>Custom Portal (Cleopatra)</h3>
+                        <span class="tag" style="border-color: rgba(234, 179, 8, 0.4); color: #eab308; background: rgba(234, 179, 8, 0.1);">In Development</span>
+                    </div>
+                    <p>Enterprise-level ERP mobile application integrated with SAP, supporting modules like Orders, Deliveries, Invoices, and more[cite: 1].</p>
+                </div>
+                <div class="project-links">
+                    <span style="color: var(--text-muted); font-size: 0.85rem;"><i class="fas fa-lock"></i> Enterprise App</span>
                 </div>
             </div>
 
@@ -528,18 +493,18 @@
 
     <!-- Contact Section -->
     <section id="contact">
-        <h2 class="section-title">Get In Touch</h2>
+        <h2 class="section-title">Let's Connect!</h2>
         <div class="contact-container">
-            <p>I'm open to new senior opportunities, consulting, and enterprise mobile projects[cite: 1]. Feel free to reach out!</p>
+            <p>I am open to new senior opportunities, consulting, and enterprise mobile applications[cite: 1]. Feel free to reach out!</p>
             <p style="margin-top: 15px; font-weight: 600;">
                 <i class="fas fa-envelope" style="color: var(--primary);"></i> ebrahimmohamed132001@gmail.com
             </p>
             <p style="margin-top: 5px; color: var(--text-muted);">
-                <i class="fas fa-phone" style="color: var(--primary);"></i> +20 1123995007
+                <i class="fas fa-map-marker-alt" style="color: var(--primary);"></i> Giza, Egypt
             </p>
             <div class="social-links">
-                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ebrahim-mohamed-a634841a3" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Ebrahim132024" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="mailto:ebrahimmohamed132001@gmail.com"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
